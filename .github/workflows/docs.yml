@@ -8,6 +8,8 @@ on:
 jobs:
   publish:
     uses: bare-swift/bare-swift/.github/workflows/publish-docs.yml@main
+    with:
+      target: Greet
     permissions:
       pages: write
       id-token: write
