@@ -10,6 +10,9 @@ let package = Package(
     products: [
         .library(name: "Greet", targets: ["Greet"])
     ],
+    dependencies: [
+        .package(url: "https://github.com/swiftlang/swift-docc-plugin.git", from: "1.4.0")
+    ],
     targets: [
         .target(name: "Greet"),
         .testTarget(
